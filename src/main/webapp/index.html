@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WAREHOUSE</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+h2{
+  font-family: "Fantasy", "Courier New", monospace;
+ text-shadow: 2px 2px 7px white;}
+div {
+  width: 170px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 16s;
+   text-shadow: 2px 2px 7px red;
+}
+
+@keyframes example {
+  0%   {background-color:blue; left:0px; top:0px;}
+  25%  {background-color:blue; left:200px; top:0px;}
+  50%  {background-color:blue; left:0px; top:0px;}   
+
+}
+</style>
+</head>
+<body>
+<center>
+ <div>
+	 <h1 style="color:powderblue ;">WALMART</h1></div>
+	 <h2 style="color:black" >WAREHOUSE DETAILS </h2>
+
+
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 2000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "W1.jpg";
+          images[1] = "pexels-tiger-lily-4483610.jpg";
+          images[2] = "W3.jpg";
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <img id="img"height="90%"width="45%" src="W1.jpg"/>
+     
+</br>
+<a href = "form.html">
+<button class="button"> ADD ITEMS</button></a>
+<a href= "view.jsp">
+<button class="button"> VIEW ITEMS</button></a>
+</center>
+
+   </head>
+   <body onload = "changeImage()">
+ 
+
+</body>
+</html>

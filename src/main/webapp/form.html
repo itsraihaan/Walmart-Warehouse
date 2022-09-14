@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WALMART</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<center>
+  <div class="contents" >
+  <h1 style ="text-shadow: 2px 2px 7px red;">WALMART</h1>
+  <div class="form">
+<form action="add.jsp" method="POST"><table align="center" cellpadding = "10">
+<tr>
+<td style=color:black>Item Name</td>
+<td><input type="text" name="itemname" maxlength="50" placeholder="Soap" />
+
+</td>
+</tr>
+<tr>
+<td style=color:black>Item Price</td>
+<td><input type="text" name="itemprice" maxlength="50" placeholder="50000"/>
+
+</td>
+</tr>
+<tr>
+<td style=color:black>Item ID</td>
+<td><input type="text" name="ID" maxlength="100" placeholder="1"/></td>
+</tr>
+<tr>
+<td style=color:black>Number Of Items</td>
+<td>
+<input type="text" name="numberofitems" maxlength="10" placeholder="969"/>
+
+</td>
+</tr>
+<tr>
+<td style=color:black>Type</td>
+<td>
+<input type="radio" name="gender" value="Shipped" /><span style=color:black>Shipped</span>
+
+<input type="radio" name="gender" value="In Country" /><span style=color:black>In Country</span>
+
+</td>
+</tr>
+<tr>
+<td style=color:black>Date of Purchase</td>
+<td>
+<input type="date" name="dateofpurchase">
+</td>
+<tr>
+<td style=color:black>Quantity</td>
+<td><select name="quantity" >
+<option value="10kg">10kg</option>
+<option value="50kg">50kg</option>
+<option value="100kg">100kg</option>
+<option value="150kg">150kg</option>
+<option value="200kg">200kg</option>
+<option value="250kg">250kg</option>
+<option value="300kg">300kg</option>
+<option value="350kg">350kg</option>
+<option value="400kg">400kg</option>
+<option value="500kg">500kg</option>
+<option value="600kg">600kg</option>
+<option value="699kg">699kg</option>
+
+</select></td>
+<tr>
+
+</td>
+<tr>
+<td style=color:black>Item Type</td>
+<td><select name="itemtype" >
+<option value="Raw">Raw</option>
+<option value="Finished">Finished</option>
+
+
+</select></td>
+</tr>
+</tr>
+
+<tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" class="button" value="Insert">
+<input type="reset" class="button" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+  </div>
+  </div>
+  
+</center>
+</body>
+</html>
